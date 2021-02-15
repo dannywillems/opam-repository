@@ -1,0 +1,27 @@
+opam-version: "2.0"
+synopsis: "Polynomials over finite fields"
+description: "Polynomials over finite fields"
+maintainer: "Danny Willems <be.danny.willems@gmail.com>"
+authors: "Danny Willems <be.danny.willems@gmail.com>"
+license: "MIT"
+homepage: "https://gitlab.com/dannywillems/ocaml-polynomial"
+bug-reports: "https://gitlab.com/dannywillems/ocaml-polynomial/issues"
+depends: [
+  "dune" {>= "2.0"}
+  "zarith" {>= "1.9.1" & < "2.0.0"}
+  "ff-sig" {>= "0.6.1" & < "0.7.0"}
+  "alcotest" {with-test}
+  "ff" {with-test & >= "0.6.1" & < "0.7.0"}
+  "bisect_ppx" {with-test & >= "2.5.0"}
+]
+build: ["dune" "build" "-j" jobs "-p" name "@install"]
+run-test: ["dune" "runtest" "-p" name "-j" jobs]
+dev-repo: "git+https://gitlab.com/dannywillems/ocaml-polynomial.git"
+url {
+  src:
+    "https://gitlab.com/dannywillems/ocaml-polynomial/-/archive/563e41feac12ac6fbf5593e6e00222fcac1c8ff9/ocaml-polynomial-563e41feac12ac6fbf5593e6e00222fcac1c8ff9.tar.bz2"
+  checksum: [
+    "md5=df143a4bb968212267e88834051850fd"
+    "sha512=36f16aa0867281067e482aa0d1418a1456ba328aa3504b442ec37a1d8e8caff8b228886b4789ed38119e73214a627ac3e8e4512b5133f22fd991076a0cee9b25"
+  ]
+}
