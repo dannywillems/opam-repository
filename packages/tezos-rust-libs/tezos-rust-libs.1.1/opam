@@ -6,17 +6,13 @@ license: "multiple"
 homepage: "https://www.tezos.com/"
 bug-reports: "https://gitlab.com/tezos/tezos-rust-libs/issues"
 depends: ["conf-rust"]
-build: [
-  ["mkdir" ".cargo"]
-  ["mv" "cargo-config" ".cargo/config"]
-  ["cargo" "build" "--target-dir" "target" "--release"]
-]
+build: ["cargo" "build" "--target-dir" "target" "--release"]
 dev-repo: "git+https://gitlab.com/tezos/tezos-rust-libs.git"
 url {
   src:
-    "https://gitlab.com/tezos/tezos-rust-libs/-/archive/v1.1/tezos-rust-libs-v1.1.zip"
+    "https://gitlab.com/tezos/tezos-rust-libs/-/archive/bump-up-rustc-bls12-381-to-match-deps/tezos-rust-libs-bump-up-rustc-bls12-381-to-match-deps.zip"
   checksum: [
-    "md5=a8a2720ba70306fdb6d0297f4d9bf95a"
-    "sha512=3aaf61288547df2ab6c9b7b092abe507316732da627bc76afda516becd36f02f029ddb96e85470bc58bf5ef703146a633fb0df21b705480dbf4f6f21b08d54eb"
+    "md5=5d7353dd21982772708299c4728ba003"
+    "sha512=0a14d630147363a508c3d10b4209b29733e52735171f3c9f6a6c1078aaa600d87e4b9cddedf9a188e1b5bcf5a735a57ee49b4b78a1c7487a794ddd0f50ff6b3f"
   ]
 }
