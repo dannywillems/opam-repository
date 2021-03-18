@@ -12,7 +12,6 @@ depends: [
   "ff-sig" {>= "0.6.1" & < "0.7.0"}
   "zarith" {>= "1.10" & < "2.0"}
   "bls12-381-gen" {= version}
-  "bisect_ppx" {with-test & >= "2.5"}
 ]
 build: ["dune" "build" "-j" jobs "-p" name "@install"]
 dev-repo: "git+https://gitlab.com/dannywillems/ocaml-bls12-381.git"
