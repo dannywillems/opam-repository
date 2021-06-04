@@ -21,14 +21,15 @@ depends: [
   "bls12-381-gen" {= version}
   "bls12-381" {= version}
   "alcotest" {with-test}
+  "hex" {with-test}
 ]
 build: ["dune" "build" "-j" jobs "-p" name "@install"]
 dev-repo: "git+https://gitlab.com/dannywillems/ocaml-bls12-381.git"
 url {
   src:
-    "https://gitlab.com/dannywillems/ocaml-bls12-381/-/archive/2f6c97bbd86ce05428e9f06ffdf3239982bd9083/ocaml-bls12-381-2f6c97bbd86ce05428e9f06ffdf3239982bd9083.tar.bz2"
+    "https://gitlab.com/dannywillems/ocaml-bls12-381/-/archive/4a7dc2c88a60c12b1ab2a98e833fc07e8cacf217/ocaml-bls12-381-4a7dc2c88a60c12b1ab2a98e833fc07e8cacf217.tar.bz2"
   checksum: [
-    "md5=3b88994951c586751fb615af236d2285"
-    "sha512=90f97d5229a2b000452b9903fc30d938538698aebdf542b799ada56d8f635c38effce93365c1994a9667f88769f696335a0d627baa68fef6cd41573f0aa7299c"
+    "md5=43d989a4a4307ca38467fdf721ba3ffa"
+    "sha512=43a69e989f7149c6e9ec59e4d31d59c23f98d856f0fb55ac65368a56f6e8de9555fd61deb45ac2a36efa98f444024444bfe240c2c9ba1a20f04ead8edc1f7348"
   ]
 }
